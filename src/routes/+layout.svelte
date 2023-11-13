@@ -75,7 +75,7 @@
   </div>
 </nav>
 
-<hr class="p-4" />
+<div class="p-4 mt-4" />
 
 <main>
   <slot />
