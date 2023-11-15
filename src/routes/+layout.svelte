@@ -28,7 +28,7 @@
 
 <nav class="navbar navbar-expand-lg py-3 fixed-top {navBar} border-bottom">
 	<div class="container">
-		<p class="navbar-brand h3">Sveltekit Template</p>
+		<a href="{base}/" class="navbar-brand h3">Sveltekit Template</a>
 
 		<button
 			class="navbar-toggler"
