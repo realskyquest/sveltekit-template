@@ -26,51 +26,48 @@
 	<meta name="DARK_MODE" content={darkMode} />
 </svelte:head>
 
-<nav class="navbar navbar-expand-lg py-3 fixed-top {navBar} border-bottom">
+<nav class="navbar navbar-expand-lg fixed-top {navBar} border-bottom">
 	<div class="container">
-		<a href="{base}/" class="navbar-brand h3">Sveltekit Template</a>
+		<a href="{base}/" class="navbar-brand"> <span editable="inline">Page builder</span> </a>
 
 		<button
 			class="navbar-toggler"
 			type="button"
 			data-bs-toggle="collapse"
-			data-bs-target="#myNavbar3"
-			aria-controls="myNavbar3"
+			data-bs-target="#myNavbar1"
+			aria-controls="myNavbar1"
 			aria-expanded="false"
 			aria-label="Toggle navigation"
 		>
 			<span class="navbar-toggler-icon" />
 		</button>
-
-		<div class="lc-block collapse navbar-collapse" id="myNavbar3">
-			<div lc-helper="shortcode" class="live-shortcode ms-auto">
+		<div class="collapse navbar-collapse" id="myNavbar1">
+			<div lc-helper="shortcode" class="live-shortcode me-auto">
 				<ul id="menu-menu-1" class="navbar-nav me-auto mb-2 mb-md-0 navbar-nav">
 					<li
 						class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739"
 					>
-						<a href="{base}/" class="nav-link display-6"> Home </a>
+						<a href="{base}/" class="nav-link">Home</a>
 					</li>
 					<li
 						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738"
 					>
-						<a href="{base}/about/" class="nav-link display-6"> About </a>
+						<a href="{base}/app/" class="nav-link">App</a>
 					</li>
 				</ul>
 			</div>
-			<div class="lc-block ms-auto d-grid gap-2 d-lg-block">
-				<form>
-					<div class="form-check form-switch">
-						<input
-							class="form-check-input"
-							id="darkMode"
-							type="checkbox"
-							name="darkMode"
-							bind:checked={darkMode}
-						/>
-						<label class="form-check-label" for="darkMode">Dark mode</label>
-					</div>
-				</form>
-			</div>
+			<form>
+				<div class="form-check form-switch">
+					<input
+						class="form-check-input"
+						id="darkMode"
+						type="checkbox"
+						name="darkMode"
+						bind:checked={darkMode}
+					/>
+					<label class="form-check-label" for="darkMode">Dark mode</label>
+				</div>
+			</form>
 		</div>
 	</div>
 </nav>
