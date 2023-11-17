@@ -28,7 +28,7 @@
 
 <nav class="navbar navbar-expand-lg fixed-top {navBar} border-bottom">
 	<div class="container">
-		<a href="{base}/" class="navbar-brand"> <span editable="inline">Page builder</span> </a>
+		<a href="{base}/" class="navbar-brand"> <span editable="inline">Sveltekit template</span> </a>
 
 		<button
 			class="navbar-toggler"
@@ -52,7 +52,7 @@
 					<li
 						class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738"
 					>
-						<a href="{base}/app/" class="nav-link">App</a>
+						<a href="{base}/about/" class="nav-link">About</a>
 					</li>
 				</ul>
 			</div>
